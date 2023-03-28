@@ -4,7 +4,7 @@
       <div class="banner-first">
         <img
           class="banner-first-img"
-          src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/HCO-7548-PHIN-SUA-DA-2019-TALENT-WEB_1.jpg"
+          src="https://thuthuatnhanh.com/wp-content/uploads/2021/11/background-tra-sua-thiet-ke-banner-800x320.jpg"
           alt=""
         />
 
@@ -16,25 +16,21 @@
       <div class="banner-first">
         <img
           class="banner-first-img"
-          src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/web_1.png"
+          src="https://img.pikbest.com/background/20220119/beverage-pearl-milk-tea-ice-background_6222166.jpg!bwr800"
           alt=""
         />
-        <a href="/product" class="btn banner-first-btn btn2">
-          Khám phá thêm
-        </a>
+        <a href="/product" class="btn banner-first-btn btn2"> Khám phá thêm </a>
       </div>
       <div class="banner-first">
         <img
           class="banner-first-img"
-          src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png"
+          src="https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-simple-and-stylish-fragrant-milk-tea-juice-drink-poster-image_130479.jpg"
           alt=""
         />
-        <a href="/product" class="btn banner-first-btn">
-          Khám phá thêm
-        </a>
+        <a href="/product" class="btn banner-first-btn"> Khám phá thêm </a>
       </div>
       <div class="banner-second d-flex">
-        <div class="col-lg-6 col-sm-12 banner-second-left">
+        <div class="">
           <p class="address">Quán mới</p>
           <ul id="lightSlider2" class="current-height">
             <li>
@@ -146,7 +142,6 @@ import { swalert } from "@/mixins/swal.mixin";
 import ContactService from "@/services/contact.service";
 
 export default {
-
   data() {
     return {
       contacts: [],

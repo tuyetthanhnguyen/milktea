@@ -3,7 +3,7 @@
     <a class="navbar-brand img-link" href="/">
       <img
         class="img-header"
-        src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/1200px-Highlands_Coffee_logo.svg.png"
+        src="https://img.freepik.com/premium-vector/bubble-milk-tea-with-coffee-flavor-boba-pearls-takeaway-cup-asian-cold-drink-bubbletea-with-tapioca-milky-coffe-cocktail-with-straw-flat-vector-illustration-isolated-white-background_198278-16299.jpg?w=2000"
         alt=""
       />
     </a>
@@ -22,55 +22,58 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/product">QUÁN CÀ PHÊ </a>
+          <a class="nav-link" href="/product">QUÁN TRÀ SỮA </a>
         </li>
         <li class="nav-item item-menu-coffe">
           <a class="nav-link" href="/product/detail">THỰC ĐƠN</a>
           <div class="item-menu">
             <div class="container menu-container d-flex">
               <ul class="items-menu_coffe col-lg-2">
-                <li class="item-menu_coffe-header">CÀ PHÊ</li>
-                <li class="item-menu_coffe">Cà phê Phin</li>
-                <li class="item-menu_coffe">PhinDi</li>
-                <li class="item-menu_coffe">Cà phê Espcreso</li>
+                <li class="item-menu_coffe-header">TRÀ SỮA</li>
+                <li class="item-menu_coffe">Trà sữa truyền thống</li>
+                <li class="item-menu_coffe">Trà sữa trân châu đường đen</li>
+                <li class="item-menu_coffe">Trà sữa nướng Đài Loan</li>
+                <li class="item-menu_coffe">Trà sữa machiato</li>
               </ul>
 
               <ul class="items-menu_coffe col-lg-2">
-                <li class="item-menu_coffe-header">FREEZE</li>
-                <li class="item-menu_coffe">Freeze Cà phê Phin</li>
-                <li class="item-menu_coffe">Freeze không cà phê</li>
+                <li class="item-menu_coffe-header">MATCHA</li>
+                <li class="item-menu_coffe">Trà sữa matcha truyền thống</li>
+                <li class="item-menu_coffe">Trà sữa matcha machiato</li>
               </ul>
               <ul class="items-menu_coffe col-lg-2">
                 <li class="item-menu_coffe-header">TRÀ</li>
                 <li class="item-menu_coffe">Trà sen vàng</li>
                 <li class="item-menu_coffe">Trà thạch đào</li>
                 <li class="item-menu_coffe">Trà thanh đào</li>
-                <li class="item-menu_coffe">Trà thạch vãi</li>
+                <li class="item-menu_coffe">Trà thạch vải</li>
               </ul>
               <ul class="items-menu_coffe col-lg-2">
-                <li class="item-menu_coffe-header">BÁNH MÌ</li>
-                <li class="item-menu_coffe">Thịt thạch</li>
-                <li class="item-menu_coffe">Xíu mại</li>
-                <li class="item-menu_coffe">Sài gòn 2 ngàn 1 ổ</li>
-                <li class="item-menu_coffe">Ăn vào mắc cổ</li>
+                <li class="item-menu_coffe-header">ĐỒ ĂN VẶT</li>
+                <li class="item-menu_coffe">Bò cá viên chiên</li>
+                <li class="item-menu_coffe">Bánh tráng trộn</li>
+                <li class="item-menu_coffe">Mì xào bò viên</li>
+                <li class="item-menu_coffe">Bánh tráng cuộn</li>
               </ul>
               <ul class="items-menu_coffe col-lg-2">
-                <li class="item-menu_coffe-header">KHÁC</li>
-                <li class="item-menu_coffe">Bánh ngọt</li>
-                <li class="item-menu_coffe">Bánh mặn</li>
-                <li class="item-menu_coffe">Bánh không ngọt cũng không mặn</li>
-                <li class="item-menu_coffe">Cũng là bánh nhưng khác dòng</li>
+                <li class="item-menu_coffe-header">BÁNH NGỌT</li>
+                <li class="item-menu_coffe">Bánh Tiramisu</li>
+                <li class="item-menu_coffe">Bánh su kem</li>
+                <li class="item-menu_coffe">Bánh crepe sầu</li>
+                <li class="item-menu_coffe">Bánh kem</li>
               </ul>
               <ul class="items-menu_coffe-img col-lg-2">
                 <a class="item-link_coffe" href=""
                   ><p class="item-menu-text_coffe">
-                    PHIN SỮA ĐÁ ĐẬM ĐÀ ĐÀ ĐÁ ĐA ĐÀ ĐA GIÁ 29K NHÁ!
+                    TRÀ SỮA THƠM NGON BÉO NHƯNG KHÔNG NGẤY. UỐNG TRÀ SỮA CÙNG BÉ
+                    MÈO SIÊU CUTE!!!
                   </p></a
                 >
                 <img
                   class="card-img-top item-img_coffe"
-                  src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/z1.jpg"
+                  src="https://nhadepso.com/wp-content/uploads/2023/01/hinh-anh-tra-sua-cute_20.jpg"
                   alt="Card image cap"
+                  height="150px"
                 />
               </ul>
             </div>
@@ -83,7 +86,7 @@
               <ul class="items-menu_coffe col-lg-2">
                 <li class="item-menu_coffe-header">TIN TỨC VÀ SỰ KIỆN</li>
                 <li class="item-menu_coffe">
-                  Item này trống vì dịch nên không có tin gì cả
+                  Món trà sữa mới mẻ đậm vị màu tím với TRÀ SỮA KHOAI MÔN
                 </li>
               </ul>
 
@@ -96,13 +99,11 @@
 
               <ul class="items-menu_coffe-img col-lg-2">
                 <a class="item-link_coffe" href=""
-                  ><p class="item-menu-text_coffe">
-                    TỰ HÀO SINH RA TỪ ĐẤT VIỆT, 1999!
-                  </p></a
+                  ><p class="item-menu-text_coffe">TRÀ SỮA THƠM NGON BỔ</p></a
                 >
                 <img
                   class="card-img-top item-img_coffe"
-                  src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/Thumbnail.jpg"
+                  src="https://png.pngtree.com/png-clipart/20210529/ourmid/pngtree-cute-cat-in-the-milk-tea-cup-png-image_3385553.jpg"
                   alt="Card image cap"
                 />
               </ul>
@@ -122,7 +123,8 @@
               <ul class="items-menu_coffe col-lg-2">
                 <li class="item-menu_coffe-header">CỘNG ĐỒNG</li>
                 <li class="item-menu_coffe">
-                  Lớp học cho em cho anh và cho chú hàng xóm
+                  Nơi chị em thưởng thức tà tưa và tâm sự mỏng cùng WINDY
+                  milktea!!!
                 </li>
               </ul>
               <ul class="items-menu_coffe col-lg-2"></ul>
@@ -177,7 +179,7 @@ export default {
 
 <style>
 .navbar-header {
-  background: #b22830;
+  background: #ffffff;
 }
 .img-header {
   width: 110px;
@@ -186,7 +188,7 @@ export default {
 .nav-link {
   font-size: 18px;
   font-weight: 700;
-  color: white;
+  color: rgb(105, 84, 84);
 }
 .btn-bars {
   background-color: #53382c;
@@ -312,8 +314,8 @@ export default {
 }
 
 .item-menu-text_coffe {
-  font-size: 18px;
-  padding-top: 18px;
+  font-size: 14px;
+  padding-top: 14px;
   border: 0;
   color: #f1bc7a;
   font-weight: 700;

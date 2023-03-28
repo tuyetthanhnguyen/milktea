@@ -11,14 +11,13 @@
       </div>
       <div class="footer-links d-flex">
         <a href="" class="footer-link"
-          >© 2018 Highlands Coffee. All rights reserved</a
+          >© 2018 Mikltea Windy. All rights reserved</a
         >
         <a href="" class="footer-link footer-link-mid"
           ><i class="fas fa-link"></i> Đăng ký để nhận bản tin</a
         >
         <a href="" class="footer-link"
-          ><i class="fas fa-envelope"></i>
-          customerservice@highlandscoffee.com.vn</a
+          ><i class="fas fa-envelope"></i> milkteawindy@gmail.com</a
         >
       </div>
     </div>

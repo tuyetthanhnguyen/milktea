@@ -2,17 +2,17 @@
   <div class="container-all">
     <div class="container page-cafe">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">CÀ PHÊ PHIN</h1>
+        <h1 class="page-cafe-header">TRÀ SỮA TRUYỀN THỐNG</h1>
         <p class="page-cafe-all">
-          Việt Nam tự hào sở hữu một di sản văn hóa cà phê giàu có, và 'Phin'
-          chính là linh hồn, là nét văn hóa thưởng thức cà phê đã ăn sâu vào
-          tiềm thức biết bao người Việt. Cà phê rang xay được chiết xuất chậm
-          rãi từng giọt một thông qua dụng cụ lọc bằng kim loại có tên là
-          'Phin', cũng giống như thể hiện sự sâu sắc trong từng suy nghĩ và chân
-          thành trong những mối quan hệ hiện hữu. Bạn có thể tùy thích lựa chọn
-          uống nóng hoặc dùng chung với đá, có hoặc không có sữa đặc. Highlands
-          Coffee tự hào phục vụ cà phê Việt theo cách truyền thống của người
-          Việt.
+          Trà sữa là loại thức uống đa dạng được tìm thấy ở nhiều nền văn hóa,
+          bao gồm một vài cách kết hợp giữa trà và sữa. Dùng để chỉ bất kỳ loại
+          đồ uống từ trà đen có pha thêm sữa. Nó có thể chỉ đơn giản là cho một
+          ít sữa vào trong một tách trà nóng. Hoặc có thể là một công thức phức
+          tạp bao gồm nhiều thành phần khác nhau, nhưng hai nguyên liệu chính
+          không thể thiếu nhất đó vẫn là nước trà và sữa. Tạo nên hương vị vô
+          cùng thơm ngon và dễ uống. Loại thức uống đặc biệt này được thưởng
+          thức ở khắp mọi nơi trên thế giới với hai kiểu thức uống chính là nóng
+          và lạnh.
         </p>
         <div class="col-sm-12 cafe-item-all">
           <ul class="product-cafe">
@@ -100,13 +100,12 @@
     </div>
     <div class="container page-phindi">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">PHINDI - CÀ PHÊ PHIN THẾ HỆ MỚI</h1>
+        <h1 class="page-cafe-header">TRÀ SỮA MATCHA</h1>
         <p class="page-cafe-all">
-          Một thế hệ Cà Phê Phin Việt Nam hoàn toàn mới, phục vụ cho thế hệ trẻ
-          đầy nhiệt huyết, độc lập và sáng tạo. Vẫn mang trong mình tinh tuý
-          chắt lọc từ Cà Phê Phin Việt Nam nhưng êm chất Phin, kết hợp độc đáo
-          cùng những vị ngon từ Kem Sữa - Hạnh Nhân - Choco. PhinDi, Cà Phê Phin
-          Thế Hệ Mới - Chất Phin Êm, Ngon Tròn Vị!
+          Matcha là một trong những xu hướng “hot” nhất hiện nay mà các bạn trẻ
+          đã kịp “bắt trend” với Châu Á và thế giới. Bài viết dưới đây, nguyên
+          liệu pha chế Hải Thụy sẽ cùng các bạn tìm hiểu vài nét về loại thức
+          uống độc đáo được các bạn trẻ rất ưa thích này.
         </p>
         <div class="col-sm-12 cafe-item-all">
           <ul class="product-cafe">
@@ -145,14 +144,13 @@
     </div>
     <div class="container page-espresso">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">Cà Phê Espresso</h1>
+        <h1 class="page-cafe-header">TRÀ SỮA TRÂN CHÂU ĐƯỜNG ĐEN</h1>
         <p class="page-cafe-all">
-          Hãy quên đi những bộn bề cuộc sống để tìm thấy những niềm vui nho nhỏ
-          từ ly Cà phê Espresso của Highlands Coffee. Bí quyết để cho ra hương
-          vị đậm đà, tinh tế của một tách cà phê Espresso là phương pháp phối
-          trộn độc đáo, công phu giữa hai loại cà phê Arabica và Robusta thượng
-          hạng, và đặc biệt là không thể thiếu được kĩ năng pha chế điêu luyện
-          từ các Barista của chúng tôi.
+          Sữa tươi trân châu đường đen là loại thức uống mới, có nguồn gốc từ
+          Đài Loan. Món đồ uống này là sự kết hợp hoàn hảo giữa sữa tươi không
+          đường và trân châu đường đen. Hương vị thanh mát nhẹ nhàng của sữa
+          tươi hòa quyện với trân châu dẻo dai, ngọt ngào đã tạo nên sức hấp dẫn
+          không thể chối từ của loại đồ uống này.
         </p>
         <div class="col-sm-12 cafe-item-all">
           <ul class="product-cafe">
@@ -310,7 +308,7 @@ export default {
       this.espressos = response.data.espresso && response.data.espresso;
 
       console.log("response", this.cafes, response.cafe, response.data);
-    })
+    });
   },
 };
 </script>

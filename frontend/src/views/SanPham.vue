@@ -3,12 +3,13 @@
     <div class="banner-product-cafe">
       <div class="container d-flex product-cafe">
         <div class="col-lg-6 col-sm-12 banner-product-cafe-body">
-          <h1 class="banner-product-header">CÀ PHÊ</h1>
+          <h1 class="banner-product-header">TRÀ SỮA</h1>
           <p class="banner-product-text">
-            Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng
-            được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí
-            quyết rang xay độc đáo, Highlands Coffee chúng tôi tự hào giới thiệu
-            những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế.
+            Là sự kết hợp hoàn hảo giữa hồng trà, sữa và trân châu đen để tạo
+            nên một ly trà sữa thơm ngon, chuẩn vị Đài Loan. Trà sữa trân châu
+            Hoàng gia có vị thơm béo của sữa, vị chan chát nhẹ của hồng trà cùng
+            với những hạt trân đen châu thơm thơm, dẻo dẻo, giòn giòn tạo nên
+            một ly trà sữa hoàn hảo.
           </p>
           <a href="/product/detail">
             <button type="button" class="btn btn-product-cafe">
@@ -19,8 +20,10 @@
         <div class="col-lg-6 col-sm-12 banner-product-cafe-img">
           <img
             class="banner-product-img_body"
-            src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/menu-PSD_3.png"
+            src="https://img5.thuthuatphanmem.vn/uploads/2021/09/22/background-tra-sua-dai-loan_095415918.jpg"
             alt=""
+            width="435px"
+            height="368px"
           />
         </div>
       </div>
@@ -31,8 +34,10 @@
         <div class="col-lg-6 col-sm-12 banner-product-img">
           <img
             class="banner-product-img_body"
-            src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/menu-FREEZE_1.png"
+            src="https://jarvis.vn/wp-content/uploads/2019/05/viet-quat-da-xay-1.jpg"
             alt=""
+            width="435px"
+            height="368px"
           />
         </div>
         <div class="col-lg-6 col-sm-12 banner-product-freeze-body">
@@ -54,7 +59,7 @@
     <div class="banner-product-tea">
       <div class="container d-flex product-tea">
         <div class="col-lg-6 col-sm-12 banner-product-tea-body">
-          <h1 class="banner-product-header">CÀ PHÊ</h1>
+          <h1 class="banner-product-header">MATCHA</h1>
           <p class="banner-product-text">
             Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng
             được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí
@@ -70,8 +75,10 @@
         <div class="col-lg-6 col-sm-12 banner-product-cafe-img">
           <img
             class="banner-product-img_body"
-            src="	https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/menu-TEA_1.png"
+            src="https://vndhomecoffee.com/public/uploads/images/2018/12/matcha-da-xay-1545124028.jpg"
             alt=""
+            width="435px"
+            height="368px"
           />
         </div>
       </div>
@@ -84,7 +91,6 @@ import { swtoast, swalert } from "@/mixins/swal.mixin";
 import ContactService from "@/services/contact.service";
 
 export default {
- 
   props: {
     id: { type: String, required: true },
   },
