@@ -103,7 +103,7 @@
                 >
                 <img
                   class="card-img-top item-img_coffe"
-                  src="https://png.pngtree.com/png-clipart/20210529/ourmid/pngtree-cute-cat-in-the-milk-tea-cup-png-image_3385553.jpg"
+                  src="https://haycafe.vn/wp-content/uploads/2022/03/Background-tra-sua-1.jpg"
                   alt="Card image cap"
                 />
               </ul>
@@ -117,7 +117,9 @@
               <ul class="items-menu_coffe col-lg-2">
                 <li class="item-menu_coffe-header">GIÁ TRỊ VĂN HÓA VIỆT</li>
 
-                <li class="item-menu_coffe">Đương đại hóa tranh Đông Hồ</li>
+                <li class="item-menu_coffe">
+                  Người Việt Nam chi 362 triệu đô la/năm cho trà sữa
+                </li>
               </ul>
 
               <ul class="items-menu_coffe col-lg-2">
@@ -132,13 +134,11 @@
               <ul class="items-menu_coffe col-lg-2"></ul>
               <ul class="items-menu_coffe-img col-lg-2">
                 <a class="item-link_coffe" href=""
-                  ><p class="item-menu-text_coffe">
-                    ĐƯƠNG ĐẠI HÓA TRANH ĐÔNG HỒ
-                  </p></a
+                  ><p class="item-menu-text_coffe">THỊ TRƯỜNG TRÀ SỮA</p></a
                 >
                 <img
                   class="card-img-top item-img_coffe"
-                  src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/KV_Highlands_CSR_1.jpg"
+                  src="https://cdn.dayphache.edu.vn/wp-content/uploads/2019/07/thi-truong-tra-sua-tai-Viet-Nam.jpg"
                   alt="Card image cap"
                 />
               </ul>
@@ -146,8 +146,11 @@
           </div>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <!-- <form class="form-inline my-2 my-lg-0">
         <a class="nav-link" href="/admin">Thêm sản phẩm</a>
+      </form> -->
+      <form class="form-inline my-2 my-lg-0">
+        <a class="nav-link" href="/admin">Đăng nhập</a>
       </form>
     </div>
   </nav>

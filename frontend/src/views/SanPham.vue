@@ -20,7 +20,7 @@
         <div class="col-lg-6 col-sm-12 banner-product-cafe-img">
           <img
             class="banner-product-img_body"
-            src="https://img5.thuthuatphanmem.vn/uploads/2021/09/22/background-tra-sua-dai-loan_095415918.jpg"
+            src="https://khothietke.net/wp-content/uploads/2021/03/taifree1392-tra-sua-tran-chau.png"
             alt=""
             width="435px"
             height="368px"
@@ -75,7 +75,7 @@
         <div class="col-lg-6 col-sm-12 banner-product-cafe-img">
           <img
             class="banner-product-img_body"
-            src="https://vndhomecoffee.com/public/uploads/images/2018/12/matcha-da-xay-1545124028.jpg"
+            src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/03/Hinh-nen-tra-sua-matcha-may-tinh-dep-nhat.jpg?ssl=1"
             alt=""
             width="435px"
             height="368px"
@@ -164,7 +164,7 @@ export default {
 .banner-product-tea,
 .banner-product-freeze,
 .banner-product-cafe {
-  background-image: url(https://www.highlandscoffee.com.vn/vnt_upload/product/04_2018/menu-PSD-bg.jpg);
+  background-image: url(https://khoinguonsangtao.vn/wp-content/uploads/2022/11/background-tra-sua.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -180,7 +180,7 @@ export default {
 .banner-product-cafe-body {
   width: 100%;
   height: 100%;
-  color: #f9ead6;
+  color: #87755e;
   padding-top: 36px;
   animation: product-load-text linear 1s;
 }

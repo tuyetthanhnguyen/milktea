@@ -71,16 +71,16 @@
               <div class="col-4">
                 <img
                   class="banner-second-right-img"
-                  src="https://www.highlandscoffee.com.vn/vnt_upload/news/08_2021/HC_7654_MOONCAKE_2021_KV_1920X1080.jpg"
+                  src="https://horecavn.com/uploads/images/tra-sua-nuong-tran-chau-duong-den.png"
                   alt=""
                 />
               </div>
               <div class="col-8 banner-second-right-body">
                 <h4 class="banner-second-right-text">
-                  BÁNH TRUNG THU HIGHLANDS COFFEE - Sẻ chia tinh túy Đất Việt
+                  TRÀ SỮA TRÂN CHÂU ĐƯỜNG ĐEN - ngọt ngào cùng windy milktea
                 </h4>
                 <p class="banner-second-right-calendar">
-                  <i class="fas fa-calendar-week"></i> 04/08/2021
+                  <i class="fas fa-calendar-week"></i> 04/04/2023
                 </p>
               </div>
             </li>
@@ -89,16 +89,16 @@
               <div class="col-4">
                 <img
                   class="banner-second-right-img"
-                  src="https://www.highlandscoffee.com.vn/vnt_upload/news/03_2020/470_crop_Highlands_-_Freeze_Tra_Xanh_-_KV_Phase_1_470x312.png"
+                  src="https://vinacup.vn/wp-content/uploads/2019/10/cong-thuc-pha-che-matcha-da-xay-600x600.jpg"
                   alt=""
                 />
               </div>
               <div class="col-8 banner-second-right-body">
                 <h4 class="banner-second-right-text">
-                  HIGHLANDS COFFEE - DỊCH VỤ GIAO HÀNG MIỄN PHÍ
+                  WINDY MIKL TEA - DỊCH VỤ GIAO HÀNG MIỄN PHÍ
                 </h4>
                 <p class="banner-second-right-calendar">
-                  <i class="fas fa-calendar-week"></i> 29/03/2020
+                  <i class="fas fa-calendar-week"></i> 28/04/2023
                 </p>
               </div>
             </li>
@@ -107,7 +107,7 @@
               <div class="col-4">
                 <img
                   class="banner-second-right-img"
-                  src="https://www.highlandscoffee.com.vn/vnt_upload/news/12_2019/tra-sen-vang-moi.png"
+                  src="https://vitas.org.vn/wp-content/uploads/2022/07/gia-tra-sen-3-1.jpg"
                   alt=""
                 />
               </div>
@@ -116,7 +116,7 @@
                   UỐNG TRÀ SEN VÀNG MỚI - NHẬN VÔ VÀN ƯU ĐÃI SEN VÀNG
                 </h4>
                 <p class="banner-second-right-calendar">
-                  <i class="fas fa-calendar-week"></i> 04/12/201
+                  <i class="fas fa-calendar-week"></i> 28/04/2023
                 </p>
               </div>
             </li>
@@ -230,7 +230,7 @@ export default {
 .banner-product-tea,
 .banner-product-freeze,
 .banner-product-cafe {
-  background-image: url(https://www.highlandscoffee.com.vn/vnt_upload/product/04_2018/menu-PSD-bg.jpg);
+  background-image: url(https://khoinguonsangtao.vn/wp-content/uploads/2022/11/background-tra-sua.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -272,7 +272,7 @@ export default {
   height: 40px;
   font-size: 18px;
   border: 1px solid white;
-  color: white;
+  color: rgb(147, 119, 119);
   line-height: 17px;
   animation: btn-linear linear 0.8s;
 }

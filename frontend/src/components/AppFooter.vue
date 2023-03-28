@@ -51,7 +51,7 @@ export default {
 
 <style>
 .footer-body {
-  background-color: #53382c;
+  background-color: #746158;
   height: 70px;
   display: flex;
   width: 100%;
