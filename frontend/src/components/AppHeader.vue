@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-header">
     <a class="navbar-brand img-link" href="/">
-      <img src=".././assets/logo.png" alt="Logo" height="100px" />
+      <img src=".././assets/logo.png" alt="Logo" height="80px" />
     </a>
     <button
       class="navbar-toggler btn-bars"
