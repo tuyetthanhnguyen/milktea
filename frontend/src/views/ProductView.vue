@@ -14,23 +14,23 @@
       <table class="table table-hover table-dark col-sm-12">
         <thead>
           <tr>
-            <th scope="col">Cafe</th>
+            <th scope="col">Trà sữa</th>
             <th scope="col">Tên thức uống</th>
             <th scope="col">Giá</th>
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
 
-        <tbody v-for="cafe in cafes" :key="cafe.id">
+        <tbody v-for="trasua in trasuas" :key="trasua.id">
           <tr>
             <th scope="row">
-              {{ cafe._id }}
+              {{ trasua._id }}
             </th>
-            <td>{{ cafe.name }}</td>
-            <td>{{ cafe.price }}</td>
+            <td>{{ trasua.name }}</td>
+            <td>{{ trasua.price }}</td>
             <td>
               <a
-                :href="'/admin/' + cafe._id + '/edit'"
+                :href="'/admin/' + trasua._id + '/edit'"
                 class="btn btn-link btn-restore"
                 >Chỉnh sửa</a
               >
@@ -39,7 +39,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = cafe._id"
+                @click="this.id = trasua._id"
               >
                 Xóa
               </button>
@@ -50,23 +50,23 @@
       <table class="table table-hover table-dark">
         <thead>
           <tr>
-            <th scope="col">Phindi</th>
+            <th scope="col">Trà</th>
             <th scope="col">Tên thức uống</th>
             <th scope="col">Giá</th>
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
-        <tbody v-for="phindi in phindis" :key="phindi.id">
+        <tbody v-for="tra in tras" :key="tra.id">
           <tr>
             <th scope="row">
-              {{ phindi._id }}
+              {{ tra._id }}
             </th>
-            <td>{{ phindi.name }}</td>
-            <td>{{ phindi.price }}</td>
+            <td>{{ tra.name }}</td>
+            <td>{{ tra.price }}</td>
 
             <td>
               <a
-                :href="'/admin/' + phindi._id + '/edit'"
+                :href="'/admin/' + tra._id + '/edit'"
                 class="btn btn-link btn-restore"
                 >Chỉnh sửa</a
               >
@@ -75,7 +75,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = phindi._id"
+                @click="this.id = tra._id"
               >
                 Xóa
               </button>
@@ -86,22 +86,22 @@
       <table class="table table-hover table-dark">
         <thead>
           <tr>
-            <th scope="col">Espresso</th>
+            <th scope="col">Món ăn vặt</th>
             <th scope="col">Tên thức uống</th>
             <th scope="col">Giá</th>
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
-        <tbody v-for="espresso in espressos" :key="espresso.id">
+        <tbody v-for="monanvat in monanvats" :key="monanvat.id">
           <tr>
             <th scope="row">
-              {{ espresso._id }}
+              {{ monanvat._id }}
             </th>
-            <td>{{ espresso.name }}</td>
-            <td>{{ espresso.price }}</td>
+            <td>{{ monanvat.name }}</td>
+            <td>{{ monanvat.price }}</td>
             <td>
               <a
-                :href="'/admin/' + espresso._id + '/edit'"
+                :href="'/admin/' + monanvat._id + '/edit'"
                 class="btn btn-link btn-restore"
                 >Chỉnh sửa</a
               >
@@ -110,7 +110,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = espresso._id"
+                @click="this.id = monanvat._id"
               >
                 Xóa
               </button>
@@ -174,21 +174,21 @@ import axios from "axios";
 export default {
   data() {
     return {
-      cafes: [],
-      phindis: [],
-      espressos: [],
+      trasuas: [],
+      tras: [],
+      monanvats: [],
       modalShow: false,
       id: "",
     };
   },
   mounted() {
     axios.get("http://localhost:3000/admin/").then((response) => {
-      this.cafes = response.data.cafe;
-      (this.phindis = response.data.phindi)(
-        (this.espressos = response.data.espresso)
+      this.trasuas = response.data.trasua;
+      (this.tras = response.data.tra)(
+        (this.monanvats = response.data.monanvat)
       );
 
-      console.log("response", this.cafes, response.cafe, response.data);
+      console.log("response", this.trasuas, response.trasua, response.data);
     });
   },
   methods: {
