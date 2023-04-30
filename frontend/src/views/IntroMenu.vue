@@ -35,10 +35,9 @@
           <ul id="lightSlider2" class="current-height">
             <li>
               <div class="col-lg-12 banner-second-left-item">
-                <p class="banner-second-left-text">Sân bay quốc tế Đà Nẵng</p>
+                <p class="banner-second-left-text">Sân bay quốc tế Cần Thơ</p>
                 <p class="banner-second-left-description">
-                  Khu vực check-in ga Quốc Tế, Sân bay Đà Nẵng, 62 Trần Quốc
-                  Toản, quận Hải Châu, Tp. Đà Nẵng
+                  179B Lê Hồng Phong, Long Hoà, Bình Thủy, Cần Thơ
                 </p>
               </div>
             </li>

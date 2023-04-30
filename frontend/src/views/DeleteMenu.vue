@@ -13,22 +13,22 @@
       <table class="table table-hover table-dark col-sm-12">
         <thead>
           <tr>
-            <th scope="col">Cafe</th>
+            <th scope="col">Trà sữa</th>
             <th scope="col">Tên thức uống</th>
             <th scope="col">Giá</th>
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
 
-        <tbody v-for="cafe in cafes" :key="cafe.id">
+        <tbody v-for="trasua in trasuas" :key="trasua.id">
           <tr>
             <th scope="row">
-              {{ cafe._id }}
+              {{ trasua._id }}
             </th>
-            <td>{{ cafe.name }}</td>
-            <td>{{ cafe.price }}</td>
+            <td>{{ trasua.name }}</td>
+            <td>{{ trasua.price }}</td>
             <td>
-              <p @click="restore(cafe._id)" class="btn btn-link btn-restore">
+              <p @click="restore(trasua._id)" class="btn btn-link btn-restore">
                 Khôi phục
               </p>
               <button
@@ -36,7 +36,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = cafe._id"
+                @click="this.id = trasua._id"
               >
                 Xóa vĩnh viễn
               </button>

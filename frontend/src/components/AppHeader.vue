@@ -1,3 +1,4 @@
+import logo from "./../images/logo/LOGOMILKTEA.png"
 <template>
   <nav class="navbar navbar-expand-lg navbar-header">
     <a class="navbar-brand img-link" href="/">
@@ -146,11 +147,11 @@
           </div>
         </li>
       </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <a class="nav-link" href="/admin">Thêm sản phẩm</a>
-      </form> -->
       <form class="form-inline my-2 my-lg-0">
         <a class="nav-link" href="/admin">Đăng nhập</a>
+      </form>
+      <form class="form-inline my-2 my-lg-0">
+        <a class="nav-link" href="/admin">Thêm sản phẩm</a>
       </form>
     </div>
   </nav>
