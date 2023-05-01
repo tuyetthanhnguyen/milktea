@@ -19,6 +19,7 @@
         <a href="" class="footer-link"
           ><i class="fas fa-envelope"></i> milkteawindy@gmail.com</a
         >
+        <!-- <a :href="'milkteawindy@gmail.com'">Liên hệ với chúng tôi</a> -->
       </div>
     </div>
   </div>

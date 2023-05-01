@@ -2,11 +2,7 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
 <template>
   <nav class="navbar navbar-expand-lg navbar-header">
     <router-link class="navbar-brand img-link" to="/">
-      <img
-        class="img-header"
-        src="https://img.freepik.com/premium-vector/bubble-milk-tea-with-coffee-flavor-boba-pearls-takeaway-cup-asian-cold-drink-bubbletea-with-tapioca-milky-coffe-cocktail-with-straw-flat-vector-illustration-isolated-white-background_198278-16299.jpg?w=2000"
-        alt=""
-      />
+      <img class="img-header" src="./../assets/logo.png" alt="Logo" />
     </router-link>
     <button
       class="navbar-toggler btn-bars"
@@ -193,7 +189,7 @@ export default {
   background: #ffffff;
 }
 .img-header {
-  width: 110px;
+  width: 80px;
   height: 80px;
 }
 .nav-link {
