@@ -8,7 +8,7 @@ mongoose.plugin(slug)
 
 
 
-const ListPhindi = new Schema({
+const ListFastfood = new Schema({
     name: {
         type: String,
         require: true
@@ -21,7 +21,7 @@ const ListPhindi = new Schema({
     img: {
         type: String
     },
-    price:{
+    price: {
         type: String,
     }
 
@@ -32,8 +32,9 @@ const ListPhindi = new Schema({
 
 
 
-var mongoose_delete = require('mongoose-delete');
-ListPhindi.plugin(mongoose_delete);
-ListPhindi.plugin(mongoose_delete, { overrideMethods: 'all' });
 
-module.exports = mongoose.model('listPhindi', ListPhindi, 'listPhindi');
+var mongoose_delete = require('mongoose-delete');
+ListFastfood.plugin(mongoose_delete);
+ListFastfood.plugin(mongoose_delete, { overrideMethods: 'all' });
+
+module.exports = mongoose.model('ListFastfood', ListFastfood, 'listFastfood');

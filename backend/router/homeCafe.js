@@ -15,7 +15,7 @@ router.delete('/admin/:id/destroyPower', homeCafeController.destroyPower)
 
 router.post('/admin/create', homeCafeController.create)
 
-router.post('/admin/create-user', homeCafeController.createUser) 
+router.post('/admin/create-user', homeCafeController.createUser)
 
 router.post('/admin/handle-form', homeCafeController.handleForm)
 

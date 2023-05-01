@@ -1,7 +1,7 @@
 
-const ListCafe = require('../models/ListCafe');
-const ListEspresso = require('../models/ListEspresso');
-const ListPhindi = require('../models/ListPhindi');
+const ListMilktea = require('../models/ListMilktea');
+const ListFastfood = require('../models/ListFastfood');
+const ListTea = require('../models/ListTea');
 
 
 const {
@@ -13,27 +13,27 @@ class ProductController {
     sanpham(req, res, next) {
         res.render('middlePage/product')
     }
-   
-    cafe(req,res,next){ 
-        Promise.all([ListCafe.find({}),ListPhindi.find({}),ListEspresso.find({})])
-            .then(([cafe,phindi,espresso])=>{
-                res.render('product/cafe',{cafe : mutiMongooseObject(cafe),phindi:mutiMongooseObject(phindi),espresso:mutiMongooseObject(espresso)})
+
+    cafe(req, res, next) {
+        Promise.all([ListMilktea.find({}), ListTea.find({}), ListFastfood.find({})])
+            .then(([milktea, tea, fastfood]) => {
+                res.render('product/milktea', { milktea: mutiMongooseObject(milktea), tea: mutiMongooseObject(tea), fastfood: mutiMongooseObject(fastfood) })
             })
             .catch(next)
     }
-    additem(req,res,next){  
-    ListCafe.delete({_id : req.params.id})
-        .then(()=> res.redirect('back'))
-        .catch(next)
+    additem(req, res, next) {
+        ListMilktea.delete({ _id: req.params.id })
+            .then(() => res.redirect('back'))
+            .catch(next)
     }
-    cart(req,res,next){ 
-    // ListCafe.findDeleted({})
-            // .then(() => 
-            res.render('product/cars')
-            // .catch(next)
-        
+    cart(req, res, next) {
+        // ListCafe.findDeleted({})
+        // .then(() => 
+        res.render('product/cars')
+        // .catch(next)
+
     }
-   
+
 
 }
 

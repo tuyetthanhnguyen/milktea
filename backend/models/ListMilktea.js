@@ -8,7 +8,7 @@ mongoose.plugin(slug)
 
 
 
-const ListCafe = new Schema({
+const ListMilktea = new Schema({
     name: {
         type: String,
         require: true
@@ -21,7 +21,7 @@ const ListCafe = new Schema({
     img: {
         type: String
     },
-    price:{
+    price: {
         type: String,
     }
 
@@ -34,7 +34,7 @@ const ListCafe = new Schema({
 
 
 var mongoose_delete = require('mongoose-delete');
-ListCafe.plugin(mongoose_delete);
-ListCafe.plugin(mongoose_delete, { overrideMethods: 'all' });
+ListMilktea.plugin(mongoose_delete);
+ListMilktea.plugin(mongoose_delete, { overrideMethods: 'all' });
 
-module.exports = mongoose.model('ListCafe', ListCafe, 'listCafe');
+module.exports = mongoose.model('ListMilktea', ListMilktea, 'listMilktea');

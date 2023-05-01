@@ -7,7 +7,7 @@ const slug = require('mongoose-slug-generator');
 mongoose.plugin(slug)
 
 const User = new mongoose.Schema({
- 
+
 
 
     name: {
@@ -30,7 +30,7 @@ const User = new mongoose.Schema({
         type: String,
         required: true
     }
-  
+
 }, {
 
     timestamps: true

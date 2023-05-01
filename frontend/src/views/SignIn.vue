@@ -101,18 +101,15 @@ export default {
           swtoast.success({
             text: "Tạo tài khoản thành công",
           });
-        }
-       else if (data.errCode === 2) {
-        swtoast.error({
+        } else if (data.errCode === 2) {
+          swtoast.error({
             text: "Tài khoản đã tồn tại, vui lòng chọn email khác",
           });
-       }
-        
-      }
-      else{
-          swtoast.error({
-            text: "Thiếu dữ liệu vui lòng nhập đầy đủ",
-          });
+        }
+      } else {
+        swtoast.error({
+          text: "Thiếu dữ liệu vui lòng nhập đầy đủ",
+        });
       }
     },
   },

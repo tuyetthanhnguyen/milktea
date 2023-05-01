@@ -23,10 +23,14 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link class="nav-link" to="/product">QUÁN TRÀ SỮA </router-link>
+          <router-link class="nav-link" to="/product"
+            >QUÁN TRÀ SỮA
+          </router-link>
         </li>
         <li class="nav-item item-menu-coffe">
-          <router-link class="nav-link" to="/product/detail">THỰC ĐƠN</router-link>
+          <router-link class="nav-link" to="/product/detail"
+            >THỰC ĐƠN</router-link
+          >
           <div class="item-menu">
             <div class="container menu-container d-flex">
               <ul class="items-menu_coffe col-lg-2">
@@ -68,7 +72,7 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
                   ><p class="item-menu-text_coffe">
                     TRÀ SỮA THƠM NGON BÉO NHƯNG KHÔNG NGẤY. UỐNG TRÀ SỮA CÙNG BÉ
                     MÈO SIÊU CUTE!!!
-                  </p></router-link 
+                  </p></router-link
                 >
                 <img
                   class="card-img-top item-img_coffe"
@@ -100,7 +104,9 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
 
               <ul class="items-menu_coffe-img col-lg-2">
                 <router-link class="item-link_coffe" to=""
-                  ><p class="item-menu-text_coffe">TRÀ SỮA THƠM NGON BỔ</p></router-link
+                  ><p class="item-menu-text_coffe">
+                    TRÀ SỮA THƠM NGON BỔ
+                  </p></router-link
                 >
                 <img
                   class="card-img-top item-img_coffe"
@@ -112,7 +118,9 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
           </div>
         </li>
         <li class="nav-item item-menu-community">
-          <router-link class="nav-link" to="#">TRÁCH NHIỆM CỘNG ĐỒNG</router-link>
+          <router-link class="nav-link" to="#"
+            >TRÁCH NHIỆM CỘNG ĐỒNG</router-link
+          >
           <div class="item-menu">
             <div class="container menu-container d-flex">
               <ul class="items-menu_coffe col-lg-2">
@@ -135,7 +143,9 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
               <ul class="items-menu_coffe col-lg-2"></ul>
               <ul class="items-menu_coffe-img col-lg-2">
                 <router-link class="item-link_coffe" to=""
-                  ><p class="item-menu-text_coffe">THỊ TRƯỜNG TRÀ SỮA</p></router-link
+                  ><p class="item-menu-text_coffe">
+                    THỊ TRƯỜNG TRÀ SỮA
+                  </p></router-link
                 >
                 <img
                   class="card-img-top item-img_coffe"
@@ -150,7 +160,6 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
       <form class="form-inline my-2 my-lg-0">
         <router-link class="nav-link" to="/login">Đăng nhập</router-link>
       </form>
-      
     </div>
   </nav>
 </template>

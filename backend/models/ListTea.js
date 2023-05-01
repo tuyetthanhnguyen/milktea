@@ -8,7 +8,7 @@ mongoose.plugin(slug)
 
 
 
-const ListEspresso = new Schema({
+const ListTea = new Schema({
     name: {
         type: String,
         require: true
@@ -21,19 +21,20 @@ const ListEspresso = new Schema({
     img: {
         type: String
     },
-    price:{
+    price: {
         type: String,
     }
 
 }, {
-  
+
     timestamps: true
 });
 
 
 
-var mongoose_delete = require('mongoose-delete');
-ListEspresso.plugin(mongoose_delete);
-ListEspresso.plugin(mongoose_delete, { overrideMethods: 'all' });
 
-module.exports = mongoose.model('ListEspresso', ListEspresso, 'listEspresso');
+var mongoose_delete = require('mongoose-delete');
+ListTea.plugin(mongoose_delete);
+ListTea.plugin(mongoose_delete, { overrideMethods: 'all' });
+
+module.exports = mongoose.model('ListTea', ListTea, 'listTea');
