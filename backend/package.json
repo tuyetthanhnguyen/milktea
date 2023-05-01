@@ -23,14 +23,14 @@
   "devDependencies": {},
   "scripts": {
     "start": "nodemon --inspect index.js",
-    "watch": "node-sass --watch the80icafe/resources/scss/app.scss the80icafe/public/css/app.css",
+    "watch": "node-sass --watch windymilktea/resources/scss/app.scss windymilktea/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "anhkhoa",
+  "author": "tuyetthanh",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/anhkhoa0509/NodeJs.git"
+    "url": "git+ssh://git@github.com/tuyetthanh/NodeJs.git"
   },
   "keywords": [
     "f8",
