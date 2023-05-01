@@ -1,8 +1,13 @@
+import logo from "./../images/logo/LOGOMILKTEA.png"
 <template>
   <nav class="navbar navbar-expand-lg navbar-header">
-    <a class="navbar-brand img-link" href="/">
-      <img src=".././assets/logo.png" alt="Logo" height="80px" />
-    </a>
+    <router-link class="navbar-brand img-link" to="/">
+      <img
+        class="img-header"
+        src="https://img.freepik.com/premium-vector/bubble-milk-tea-with-coffee-flavor-boba-pearls-takeaway-cup-asian-cold-drink-bubbletea-with-tapioca-milky-coffe-cocktail-with-straw-flat-vector-illustration-isolated-white-background_198278-16299.jpg?w=2000"
+        alt=""
+      />
+    </router-link>
     <button
       class="navbar-toggler btn-bars"
       type="button"
@@ -18,10 +23,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/product">QUÁN TRÀ SỮA </a>
+          <router-link class="nav-link" to="/product">QUÁN TRÀ SỮA </router-link>
         </li>
         <li class="nav-item item-menu-coffe">
-          <a class="nav-link" href="/product/detail">THỰC ĐƠN</a>
+          <router-link class="nav-link" to="/product/detail">THỰC ĐƠN</router-link>
           <div class="item-menu">
             <div class="container menu-container d-flex">
               <ul class="items-menu_coffe col-lg-2">
@@ -59,11 +64,11 @@
                 <li class="item-menu_coffe">Bánh kem</li>
               </ul>
               <ul class="items-menu_coffe-img col-lg-2">
-                <a class="item-link_coffe" href=""
+                <router-link class="item-link_coffe" to=""
                   ><p class="item-menu-text_coffe">
                     TRÀ SỮA THƠM NGON BÉO NHƯNG KHÔNG NGẤY. UỐNG TRÀ SỮA CÙNG BÉ
                     MÈO SIÊU CUTE!!!
-                  </p></a
+                  </p></router-link 
                 >
                 <img
                   class="card-img-top item-img_coffe"
@@ -76,7 +81,7 @@
           </div>
         </li>
         <li class="nav-item item-menu-news">
-          <a class="nav-link" href="/product">TIN TỨC</a>
+          <router-link class="nav-link" to="/product">TIN TỨC</router-link>
           <div class="item-menu">
             <div class="container menu-container d-flex">
               <ul class="items-menu_coffe col-lg-2">
@@ -94,8 +99,8 @@
               <ul class="items-menu_coffe col-lg-2"></ul>
 
               <ul class="items-menu_coffe-img col-lg-2">
-                <a class="item-link_coffe" href=""
-                  ><p class="item-menu-text_coffe">TRÀ SỮA THƠM NGON BỔ</p></a
+                <router-link class="item-link_coffe" to=""
+                  ><p class="item-menu-text_coffe">TRÀ SỮA THƠM NGON BỔ</p></router-link
                 >
                 <img
                   class="card-img-top item-img_coffe"
@@ -107,7 +112,7 @@
           </div>
         </li>
         <li class="nav-item item-menu-community">
-          <a class="nav-link" href="#">TRÁCH NHIỆM CỘNG ĐỒNG</a>
+          <router-link class="nav-link" to="#">TRÁCH NHIỆM CỘNG ĐỒNG</router-link>
           <div class="item-menu">
             <div class="container menu-container d-flex">
               <ul class="items-menu_coffe col-lg-2">
@@ -129,8 +134,8 @@
               <ul class="items-menu_coffe col-lg-2"></ul>
               <ul class="items-menu_coffe col-lg-2"></ul>
               <ul class="items-menu_coffe-img col-lg-2">
-                <a class="item-link_coffe" href=""
-                  ><p class="item-menu-text_coffe">THỊ TRƯỜNG TRÀ SỮA</p></a
+                <router-link class="item-link_coffe" to=""
+                  ><p class="item-menu-text_coffe">THỊ TRƯỜNG TRÀ SỮA</p></router-link
                 >
                 <img
                   class="card-img-top item-img_coffe"
@@ -143,11 +148,9 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <a class="nav-link" href="/admin">Đăng nhập</a>
+        <router-link class="nav-link" to="/login">Đăng nhập</router-link>
       </form>
-      <form class="form-inline my-2 my-lg-0">
-        <a class="nav-link" href="/admin">Thêm sản phẩm</a>
-      </form>
+      
     </div>
   </nav>
 </template>

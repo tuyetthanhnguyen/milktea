@@ -2,9 +2,59 @@ const { trusted } = require("mongoose");
 const ListCafe = require("../models/ListCafe");
 const ListEspresso = require("../models/ListEspresso");
 const ListPhindi = require("../models/ListPhindi");
+const User = require("../models/User")
 const { MongooseObject, mutiMongooseObject } = require("../util/Mongoose");
 
 class HomeCafeController {
+    createUser = async (req, res, next) => {
+        console.log("req.body", req.body)
+        if (req.body) {
+            const user = await User.findOne({ account: req.body.account })
+            console.log('user', user,)
+            if (user) {
+                return res.status(500).json({
+                    errCode: 2,
+                    mess: "Tài khoản đã tồn tại",
+                });
+            }
+            else {
+                req.body = new User(req.body);
+                req.body
+                    .save()
+                    .then(() =>
+                        res.json({
+                            success: true,
+                        })
+                    )
+                    .catch(next);
+
+            }
+        }
+        else {
+            return res.status(500).json({
+                errCode: 1,
+                mess: "Thông tin rỗng, vui lòng nhập lại",
+            });
+        }
+
+
+    }
+
+
+
+    getUser(req, res, next) {
+        User.find()
+            .then(users => {
+                res.json({
+                    users: mutiMongooseObject(users),
+                });
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+    }
+
   admin(req, res, next) {
     Promise.all([ListCafe.find({}), ListPhindi.find({}), ListEspresso.find({})])
       .then(([cafe, phindi, espresso]) => {
@@ -51,6 +101,39 @@ class HomeCafeController {
       })
       .catch(next);
   }
+
+  login = async (req, res, next) => {
+    const account = req.body.account;
+    const password = req.body.password;
+    console.log("req.body", req.body)
+    if (!account || !password) {
+        return res.status(500).json({
+            errCode: 1,
+            mess: "Tài khoản hoặc mật khẩu rỗng",
+        });
+    } else {
+        const user = await User.findOne({ account: account })
+        if (user) {
+            if (user.password === password) {
+                return res.status(200).json({ errCode: 0, user: user });
+            }
+            else {
+                return res.status(500).json({
+                    errCode: 2,
+                    mess: "Mật khẩu không đúng, vui lòng thử lại",
+                });
+            }
+        }
+        else {
+            return res.status(500).json({
+                errCode: 3,
+                mess: "Tài khoản không tồn tại",
+            });
+        }
+
+    }
+
+}
 
   async create(req, res, next) {
     switch (req.body.action) {

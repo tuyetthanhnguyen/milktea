@@ -2,7 +2,7 @@
   <div class="container-all">
     <div class="container page-cafe">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">TRÀ SỮA</h1>
+        <h1 class="page-cafe-header">TRÀ SỮA TRUYỀN THỐNG</h1>
         <p class="page-cafe-all">
           Trà sữa là loại thức uống đa dạng được tìm thấy ở nhiều nền văn hóa,
           bao gồm một vài cách kết hợp giữa trà và sữa. Dùng để chỉ bất kỳ loại
@@ -100,18 +100,12 @@
     </div>
     <div class="container page-phindi">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">TRÀ</h1>
+        <h1 class="page-cafe-header">TRÀ SỮA MATCHA</h1>
         <p class="page-cafe-all">
-          Trà có chứa nhiều chất dinh dưỡng như chất chống oxy hóa và catechin,
-          giúp ngăn ngừa ung thư. Theo một nghiên cứu, những người uống trà
-          thường có ít nguy cơ mắc ung thư hơn, đặc biệt là ung thư tuyến tiền
-          liệt và ung thư vú. Bên cạnh đó, các nhà nghiên cứu cho rằng trà cũng
-          giúp làm giảm nguy cơ mắc bệnh tiểu đường tuýp 2 và bệnh tim. Nước trà
-          còn giúp bạn giảm cân hiệu quả. Một trong những lợi ích của trà là
-          giúp tăng cường quá trình trao đổi chất và đốt cháy chất béo. Theo một
-          nghiên cứu, uống trà mỗi ngày sẽ giúp bạn giảm 75–100 calo mỗi ngày.
-          Trà xanh chứa ít caffeine hơn cà phê nhưng đủ để bạn tỉnh táo và cải
-          thiện chức năng não.
+          Matcha là một trong những xu hướng “hot” nhất hiện nay mà các bạn trẻ
+          đã kịp “bắt trend” với Châu Á và thế giới. Bài viết dưới đây, nguyên
+          liệu pha chế Hải Thụy sẽ cùng các bạn tìm hiểu vài nét về loại thức
+          uống độc đáo được các bạn trẻ rất ưa thích này.
         </p>
         <div class="col-sm-12 cafe-item-all">
           <ul class="product-cafe">
@@ -150,16 +144,13 @@
     </div>
     <div class="container page-espresso">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">MÓN ĂN VẶT</h1>
+        <h1 class="page-cafe-header">TRÀ SỮA TRÂN CHÂU ĐƯỜNG ĐEN</h1>
         <p class="page-cafe-all">
-          Ăn vặt là trường hợp ăn thức ăn hoặc dùng đồ uống giữa các bữa ăn
-          chính thông thường hàng ngày. Ăn vặt thường chỉ đơn giản là ăn một
-          loại thức ăn hoặc uống một loại đồ uống nào đó dùng để ăn ở giữa các
-          bữa ăn chính hàng ngày, là những thức ăn hay đồ uống tốt và không tốt
-          cho sức khỏe. Tình trạng đói bụng là một động lực chính ở đằng sau để
-          thúc đẩy việc ăn vặt; tuy vậy các yếu tố như địa điểm sinh hoạt, môi
-          trường xã hội, thời điểm trong ngày và các loại thực phẩm ưa thích có
-          ở chung quanh cũng đóng góp vào hiện tượng ăn vặt.
+          Sữa tươi trân châu đường đen là loại thức uống mới, có nguồn gốc từ
+          Đài Loan. Món đồ uống này là sự kết hợp hoàn hảo giữa sữa tươi không
+          đường và trân châu đường đen. Hương vị thanh mát nhẹ nhàng của sữa
+          tươi hòa quyện với trân châu dẻo dai, ngọt ngào đã tạo nên sức hấp dẫn
+          không thể chối từ của loại đồ uống này.
         </p>
         <div class="col-sm-12 cafe-item-all">
           <ul class="product-cafe">

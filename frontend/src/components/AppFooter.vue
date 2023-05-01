@@ -11,7 +11,7 @@
       </div>
       <div class="footer-links d-flex">
         <a href="" class="footer-link"
-          >© 2018 Mikltea Windy. All rights reserved</a
+          >© 2023 Mikltea Windy. All rights reserved</a
         >
         <a href="" class="footer-link footer-link-mid"
           ><i class="fas fa-link"></i> Đăng ký để nhận bản tin</a

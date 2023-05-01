@@ -7,7 +7,8 @@ import AdminMenu from "../views/ProductView.vue";
 import ProductAdd from "../views/ProductAdd.vue";
 import EditMenu from "../views/EditMenu.vue";
 import DeleteMenu from "../views/DeleteMenu.vue";
-
+import Login from "../views/Login.vue"
+import SignIn from "../views/SignIn.vue"
 const routes = [
   //   {
   //     path: "/",
@@ -50,6 +51,16 @@ const routes = [
     path: "/delete",
     name: "DeleteMenu",
     component: DeleteMenu,
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+  },
+  {
+    path: "/dangky",
+    name: "SignIn",
+    component: SignIn,
   },
 ];
 

@@ -47,21 +47,21 @@
       <table class="table table-hover table-dark">
         <thead>
           <tr>
-            <th scope="col">Trà</th>
+            <th scope="col">Phindi</th>
             <th scope="col">Tên thức uống</th>
             <th scope="col">Giá</th>
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
-        <tbody v-for="tra in tras" :key="tra.id">
+        <tbody v-for="phindi in phindis" :key="phindi.id">
           <tr>
             <th scope="row">
-              {{ tra._id }}
+              {{ phindi._id }}
             </th>
-            <td>{{ tra.name }}</td>
-            <td>{{ tra.price }}</td>
+            <td>{{ phindi.name }}</td>
+            <td>{{ phindi.price }}</td>
             <td>
-              <p @click="restore(tra._id)" class="btn btn-link btn-restore">
+              <p @click="restore(phindi._id)" class="btn btn-link btn-restore">
                 Khôi phục
               </p>
               <button
@@ -69,7 +69,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = tra._id"
+                @click="this.id = phindi._id"
               >
                 Xóa vĩnh viễn
               </button>
@@ -80,22 +80,22 @@
       <table class="table table-hover table-dark">
         <thead>
           <tr>
-            <th scope="col">Món ăn vặt</th>
+            <th scope="col">Espresso</th>
             <th scope="col">Tên thức uống</th>
             <th scope="col">Giá</th>
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
-        <tbody v-for="monanvat in monanvats" :key="monanvat.id">
+        <tbody v-for="espresso in espressos" :key="espresso.id">
           <tr>
             <th scope="row">
-              {{ monanvat._id }}
+              {{ espresso._id }}
             </th>
-            <td>{{ monanvat.name }}</td>
-            <td>{{ monanvat.price }}</td>
+            <td>{{ espresso.name }}</td>
+            <td>{{ espresso.price }}</td>
             <td>
               <p
-                @click="restore(monanvat._id)"
+                @click="restore(espresso._id)"
                 class="btn btn-link btn-restore"
               >
                 Khôi phục
@@ -105,7 +105,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = monanvat._id"
+                @click="this.id = espresso._id"
               >
                 Xóa vĩnh viễn
               </button>
@@ -172,9 +172,9 @@ import axios from "axios";
 export default {
   data() {
     return {
-      trasuas: [],
-      tras: [],
-      monanvats: [],
+      cafes: [],
+      phindis: [],
+      espressos: [],
       modalShow: false,
       id: "",
     };
@@ -182,11 +182,11 @@ export default {
   mounted() {
     axios.get("http://localhost:3000/trashMenu").then((response) => {
       console.log("response", response);
-      this.trasuas = response.data.trasua && response.data.trasua;
-      this.tras = response.data.tra && response.data.tra;
-      this.monanvats = response.data.monanvat && response.data.monanvat;
+      this.cafes = response.data.cafe && response.data.cafe;
+      this.phindis = response.data.phindi && response.data.phindi;
+      this.espressos = response.data.espresso && response.data.espresso;
 
-      console.log("response", this.trasuas, response.trasua, response.data);
+      console.log("response", this.cafes, response.cafe, response.data);
     });
   },
   methods: {
