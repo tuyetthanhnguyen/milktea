@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid">
-    <div class="banner-product-cafe">
-      <div class="container d-flex product-cafe">
-        <div class="col-lg-6 col-sm-12 banner-product-cafe-body">
+    <div class="banner-product-milktea">
+      <div class="container d-flex product-milktea">
+        <div class="col-lg-6 col-sm-12 banner-product-milktea-body">
           <h1 class="banner-product-header">TRÀ SỮA</h1>
           <p class="banner-product-text">
             Là sự kết hợp hoàn hảo giữa hồng trà, sữa và trân châu đen để tạo
@@ -12,12 +12,12 @@
             một ly trà sữa hoàn hảo.
           </p>
           <a href="/product/detail">
-            <button type="button" class="btn btn-product-cafe">
+            <button type="button" class="btn btn-product-milktea">
               Khám phá thêm
             </button>
           </a>
         </div>
-        <div class="col-lg-6 col-sm-12 banner-product-cafe-img">
+        <div class="col-lg-6 col-sm-12 banner-product-milktea-img">
           <img
             class="banner-product-img_body"
             src="https://khothietke.net/wp-content/uploads/2021/03/taifree1392-tra-sua-tran-chau.png"
@@ -72,7 +72,7 @@
             </button>
           </a>
         </div>
-        <div class="col-lg-6 col-sm-12 banner-product-cafe-img">
+        <div class="col-lg-6 col-sm-12 banner-product-milktea-img">
           <img
             class="banner-product-img_body"
             src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/03/Hinh-nen-tra-sua-matcha-may-tinh-dep-nhat.jpg?ssl=1"
@@ -163,7 +163,7 @@ export default {
 <style>
 .banner-product-tea,
 .banner-product-freeze,
-.banner-product-cafe {
+.banner-product-milktea {
   background-image: url(https://khoinguonsangtao.vn/wp-content/uploads/2022/11/background-tra-sua.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,7 +177,7 @@ export default {
 }
 .banner-product-tea-body,
 .banner-product-freeze-body,
-.banner-product-cafe-body {
+.banner-product-milktea-body {
   width: 100%;
   height: 100%;
   color: #87755e;
@@ -200,7 +200,7 @@ export default {
 }
 .btn-product-tea,
 .btn-product-freeze,
-.btn-product-cafe {
+.btn-product-milktea {
   bottom: 14%;
   width: 250px;
   height: 40px;
@@ -216,16 +216,16 @@ export default {
 }
 .btn-product-tea:hover,
 .btn-product-freeze:hover,
-.btn-product-cafe:hover {
+.btn-product-milktea:hover {
   background-color: #b22830;
   color: white;
 }
 .product-tea,
 .product-freeze,
-.product-cafe {
+.product-milktea {
   flex-wrap: wrap;
 }
-.banner-product-cafe-img {
+.banner-product-milktea-img {
   display: flex;
   justify-content: flex-end;
 }
@@ -241,7 +241,7 @@ export default {
 }
 @media (max-width: 767px) {
   .product-tea,
-  .product-cafe {
+  .product-milktea {
     flex-direction: column-reverse;
     padding: 40px 0px 40px 0px;
   }
@@ -251,7 +251,7 @@ export default {
   .banner-product-img_body {
     width: 100%;
   }
-  .banner-product-cafe-img {
+  .banner-product-milktea-img {
     display: flex;
     justify-content: center;
   }

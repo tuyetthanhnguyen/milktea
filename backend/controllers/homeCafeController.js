@@ -77,7 +77,7 @@ class HomeCafeController {
         if (milktea != null) {
           value = MongooseObject(milktea);
           res.json({ value });
-        } else if (phindi != null) {
+        } else if (tea != null) {
           value = MongooseObject(tea);
           res.json({ value });
         } else {
@@ -132,6 +132,7 @@ class HomeCafeController {
 
   }
   async create(req, res, next) {
+    console.log('milktea', req.body)
     switch (req.body.action) {
       case "milktea":
         req.body = new ListMilktea(req.body);

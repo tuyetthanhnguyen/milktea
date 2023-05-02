@@ -21,16 +21,16 @@
           </tr>
         </thead>
 
-        <tbody v-for="trasua in trasuas" :key="trasua.id">
+        <tbody v-for="milktea in milkteas" :key="milktea.id">
           <tr>
             <th scope="row">
-              {{ trasua._id }}
+              {{ milktea._id }}
             </th>
-            <td>{{ trasua.name }}</td>
-            <td>{{ trasua.price }}</td>
+            <td>{{ milktea.name }}</td>
+            <td>{{ milktea.price }}</td>
             <td>
               <a
-                :href="'/admin/' + trasua._id + '/edit'"
+                :href="'/admin/' + milktea._id + '/edit'"
                 class="btn btn-link btn-restore"
                 >Chỉnh sửa</a
               >
@@ -39,7 +39,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = trasua._id"
+                @click="this.id = milktea._id"
               >
                 Xóa
               </button>
@@ -56,17 +56,17 @@
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
-        <tbody v-for="tra in tras" :key="tra.id">
+        <tbody v-for="tea in teas" :key="tea.id">
           <tr>
             <th scope="row">
-              {{ tra._id }}
+              {{ tea._id }}
             </th>
-            <td>{{ tra.name }}</td>
-            <td>{{ tra.price }}</td>
+            <td>{{ tea.name }}</td>
+            <td>{{ tea.price }}</td>
 
             <td>
               <a
-                :href="'/admin/' + tra._id + '/edit'"
+                :href="'/admin/' + tea._id + '/edit'"
                 class="btn btn-link btn-restore"
                 >Chỉnh sửa</a
               >
@@ -75,7 +75,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = tra._id"
+                @click="this.id = tea._id"
               >
                 Xóa
               </button>
@@ -174,8 +174,8 @@ import axios from "axios";
 export default {
   data() {
     return {
-      trasuas: [],
-      tras: [],
+      milkteas: [],
+      teas: [],
       monanvats: [],
       modalShow: false,
       id: "",
@@ -183,12 +183,12 @@ export default {
   },
   mounted() {
     axios.get("http://localhost:3000/admin/").then((response) => {
-      this.trasuas = response.data.trasua;
-      (this.tras = response.data.tra)(
+      this.milkteas = response.data.milktea;
+      (this.teas = response.data.tea)(
         (this.monanvats = response.data.monanvat)
       );
 
-      console.log("response", this.trasuas, response.trasua, response.data);
+      console.log("response", this.milkteas, response.milktea, response.data);
     });
   },
   methods: {

@@ -20,15 +20,15 @@
           </tr>
         </thead>
 
-        <tbody v-for="trasua in trasuas" :key="trasua.id">
+        <tbody v-for="milktea in milkteas" :key="milktea.id">
           <tr>
             <th scope="row">
-              {{ trasua._id }}
+              {{ milktea._id }}
             </th>
-            <td>{{ trasua.name }}</td>
-            <td>{{ trasua.price }}</td>
+            <td>{{ milktea.name }}</td>
+            <td>{{ milktea.price }}</td>
             <td>
-              <p @click="restore(trasua._id)" class="btn btn-link btn-restore">
+              <p @click="restore(milktea._id)" class="btn btn-link btn-restore">
                 Khôi phục
               </p>
               <button
@@ -36,7 +36,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = trasua._id"
+                @click="this.id = milktea._id"
               >
                 Xóa vĩnh viễn
               </button>
@@ -53,15 +53,15 @@
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
-        <tbody v-for="tra in tras" :key="tra.id">
+        <tbody v-for="tea in teas" :key="tea.id">
           <tr>
             <th scope="row">
-              {{ tra._id }}
+              {{ tea._id }}
             </th>
-            <td>{{ tra.name }}</td>
-            <td>{{ tra.price }}</td>
+            <td>{{ tea.name }}</td>
+            <td>{{ tea.price }}</td>
             <td>
-              <p @click="restore(tra._id)" class="btn btn-link btn-restore">
+              <p @click="restore(tea._id)" class="btn btn-link btn-restore">
                 Khôi phục
               </p>
               <button
@@ -69,7 +69,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = tra._id"
+                @click="this.id = tea._id"
               >
                 Xóa vĩnh viễn
               </button>
@@ -86,16 +86,16 @@
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
-        <tbody v-for="monanvat in monanvats" :key="monanvat.id">
+        <tbody v-for="fastfood in fastfoods" :key="fastfood.id">
           <tr>
             <th scope="row">
-              {{ monanvat._id }}
+              {{ fastfood._id }}
             </th>
-            <td>{{ monanvat.name }}</td>
-            <td>{{ monanvat.price }}</td>
+            <td>{{ fastfood.name }}</td>
+            <td>{{ fastfood.price }}</td>
             <td>
               <p
-                @click="restore(monanvat._id)"
+                @click="restore(fastfood._id)"
                 class="btn btn-link btn-restore"
               >
                 Khôi phục
@@ -105,7 +105,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = monanvat._id"
+                @click="this.id = fastfood._id"
               >
                 Xóa vĩnh viễn
               </button>
@@ -172,9 +172,9 @@ import axios from "axios";
 export default {
   data() {
     return {
-      trasuas: [],
-      tras: [],
-      monanvats: [],
+      milkteas: [],
+      teas: [],
+      fastfoods: [],
       modalShow: false,
       id: "",
     };
@@ -182,11 +182,11 @@ export default {
   mounted() {
     axios.get("http://localhost:3000/trashMenu").then((response) => {
       console.log("response", response);
-      this.trasuas = response.data.trasua && response.data.trasua;
-      this.tras = response.data.tra && response.data.tra;
-      this.monanvats = response.data.monanvat && response.data.monanvat;
+      this.milkteas = response.data.milktea && response.data.milktea;
+      this.teas = response.data.tea && response.data.tea;
+      this.fastfoods = response.data.fastfood && response.data.fastfood;
 
-      console.log("response", this.trasuas, response.trasua, response.data);
+      console.log("response", this.milkteas, response.milktea, response.datza);
     });
   },
   methods: {

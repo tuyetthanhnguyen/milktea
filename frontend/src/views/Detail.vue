@@ -1,9 +1,9 @@
 <template>
   <div class="container-all">
-    <div class="container page-cafe">
+    <div class="container page-milktea">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">TRÀ SỮA</h1>
-        <p class="page-cafe-all">
+        <h1 class="page-milktea-header">TRÀ SỮA</h1>
+        <p class="page-milktea-all">
           Trà sữa là loại thức uống đa dạng được tìm thấy ở nhiều nền văn hóa,
           bao gồm một vài cách kết hợp giữa trà và sữa. Dùng để chỉ bất kỳ loại
           đồ uống từ trà đen có pha thêm sữa. Nó có thể chỉ đơn giản là cho một
@@ -14,25 +14,27 @@
           thức ở khắp mọi nơi trên thế giới với hai kiểu thức uống chính là nóng
           và lạnh.
         </p>
-        <div class="col-sm-12 cafe-item-all">
-          <ul class="product-cafe">
-            <li v-for="cafe in cafes" :key="cafe.id">
-              <div class="cafe-item" method="POST" action="">
+        <div class="col-sm-12 milktea-item-all">
+          <ul class="product-milktea">
+            <li v-for="milktea in milkteas" :key="milktea.id">
+              <div class="milktea-item" method="POST" action="">
                 <img
-                  class="cafe-item-img-top"
-                  v-bind:src="cafe.img"
+                  class="milktea-item-img-top"
+                  v-bind:src="milktea.img"
                   alt="Card image cap"
                 />
-                <div class="cafe-item-body">
-                  <h5 class="cafe-item-title">{{ cafe.name }}</h5>
-                  <p class="cafe-item-text">
+                <div class="milktea-item-body">
+                  <h5 class="milktea-item-title">{{ milktea.name }}</h5>
+                  <p class="milktea-item-text">
                     Giá :
-                    <span class="cafe-item-price">{{ cafe.price }} VNĐ</span>
+                    <span class="milktea-item-price"
+                      >{{ milktea.price }} VNĐ</span
+                    >
                   </p>
                   <p
                     data-toggle="modal"
                     class="btn btn-primary btn-add-item"
-                    @click="addItem(cafe)"
+                    @click="addItem(milktea)"
                   >
                     ĐẶT MUA NGAY
                   </p>
@@ -88,7 +90,7 @@
                 <button
                   data-toggle="modal"
                   class="btn btn-primary btn-add-item"
-                  @click="buyNow"
+                  @click="addItem(tea)"
                 >
                   ĐẶT MUA NGAY
                 </button>
@@ -98,10 +100,10 @@
         </div>
       </div>
     </div>
-    <div class="container page-phindi">
+    <div class="container page-tea">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">TRÀ</h1>
-        <p class="page-cafe-all">
+        <h1 class="page-milktea-header">TRÀ</h1>
+        <p class="page-milktea-all">
           Trà có chứa nhiều chất dinh dưỡng như chất chống oxy hóa và catechin,
           giúp ngăn ngừa ung thư. Theo một nghiên cứu, những người uống trà
           thường có ít nguy cơ mắc ung thư hơn, đặc biệt là ung thư tuyến tiền
@@ -113,30 +115,31 @@
           Trà xanh chứa ít caffeine hơn cà phê nhưng đủ để bạn tỉnh táo và cải
           thiện chức năng não.
         </p>
-        <div class="col-sm-12 cafe-item-all">
-          <ul class="product-cafe">
-            <!-- {{#each phindi}} -->
-            <li v-for="phindi in phindis" :key="phindi.id">
-              <div class="cafe-item" method="POST" action="">
+        <div class="col-sm-12 milktea-item-all">
+          <ul class="product-milktea">
+            <!-- {{#each tea}} -->
+            <li v-for="tea in teas" :key="tea.id">
+              <div class="milktea-item" method="POST" action="">
                 <img
-                  class="cafe-item-img-top"
-                  v-bind:src="phindi.img"
+                  class="milktea-item-img-top"
+                  v-bind:src="tea.img"
                   alt="Card image cap"
                 />
-                <div class="cafe-item-body">
-                  <h5 class="cafe-item-title">{{ phindi.name }}</h5>
-                  <p class="cafe-item-text">
+                <div class="milktea-item-body">
+                  <h5 class="milktea-item-title">{{ tea.name }}</h5>
+                  <p class="milktea-item-text">
                     Giá :
-                    <span class="cafe-item-price">{{ phindi.price }} VNĐ</span>
+                    <span class="milktea-item-price">{{ tea.price }} VNĐ</span>
                   </p>
                   <button
                     data-toggle="modal"
                     class="btn btn-primary btn-add-item"
-                    data-id="{{phindi._id}}"
+                    data-id="{{tea._id}}"
                     data-target="#add-item-price"
-                    data-img="{{phindi.img}}"
-                    data-price="{{phindi.price}}"
-                    data-name="{{phindi.name}}"
+                    data-img="{{tea.img}}"
+                    data-price="{{tea.price}}"
+                    data-name="{{tea.name}}"
+                    @click="addItem(tea)"
                   >
                     ĐẶT MUA NGAY
                   </button>
@@ -148,10 +151,10 @@
         </div>
       </div>
     </div>
-    <div class="container page-espresso">
+    <div class="container page-fastfood">
       <div class="col-lg-8 col-sm-12">
-        <h1 class="page-cafe-header">MÓN ĂN VẶT</h1>
-        <p class="page-cafe-all">
+        <h1 class="page-milktea-header">MÓN ĂN VẶT</h1>
+        <p class="page-milktea-all">
           Ăn vặt là trường hợp ăn thức ăn hoặc dùng đồ uống giữa các bữa ăn
           chính thông thường hàng ngày. Ăn vặt thường chỉ đơn giản là ăn một
           loại thức ăn hoặc uống một loại đồ uống nào đó dùng để ăn ở giữa các
@@ -161,35 +164,36 @@
           trường xã hội, thời điểm trong ngày và các loại thực phẩm ưa thích có
           ở chung quanh cũng đóng góp vào hiện tượng ăn vặt.
         </p>
-        <div class="col-sm-12 cafe-item-all">
-          <ul class="product-cafe">
-            <!-- {{#each espresso}} -->
-            <li v-for="espresso in espressos" :key="espresso.id">
-              <div class="cafe-item" method="POST" action="">
+        <div class="col-sm-12 milktea-item-all">
+          <ul class="product-milktea">
+            <!-- {{#each fastfood}} -->
+            <li v-for="fastfood in fastfoods" :key="fastfood.id">
+              <div class="milktea-item" method="POST" action="">
                 <img
-                  class="cafe-item-img-top"
-                  value="{{espresso.img}}"
-                  v-bind:src="espresso.img"
+                  class="milktea-item-img-top"
+                  value="{{fastfood.img}}"
+                  v-bind:src="fastfood.img"
                   alt="Card image cap"
                 />
-                <div class="cafe-item-body">
-                  <h5 class="cafe-item-title" value="{{espresso.name}}">
-                    {{ espresso.name }}
+                <div class="milktea-item-body">
+                  <h5 class="milktea-item-title" value="{{fastfood.name}}">
+                    {{ fastfood.name }}
                   </h5>
-                  <p class="cafe-item-text" value="{{espresso.price}}">
+                  <p class="milktea-item-text" value="{{fastfood.price}}">
                     Giá :
-                    <span class="cafe-item-price"
-                      >{{ espresso.price }} VNĐ</span
+                    <span class="milktea-item-price"
+                      >{{ fastfood.price }} VNĐ</span
                     >
                   </p>
                   <button
                     data-toggle="modal"
                     class="btn btn-primary btn-add-item"
-                    data-id="{{espresso._id}}"
+                    data-id="{{fastfood._id}}"
                     data-target="#add-item-price"
-                    data-img="{{espresso.img}}"
-                    data-price="{{espresso.price}}"
-                    data-name="{{espresso.name}}"
+                    data-img="{{fastfood.img}}"
+                    data-price="{{fastfood.price}}"
+                    data-name="{{fastfood.name}}"
+                    @click="addItem(fastfood)"
                   >
                     ĐẶT MUA NGAY
                   </button>
@@ -219,9 +223,9 @@ export default {
   },
   data() {
     return {
-      cafes: [],
-      phindis: [],
-      espressos: [],
+      milkteas: [],
+      teas: [],
+      fastfoods: [],
       modalShow: false,
       id: "",
       cars: [],
@@ -312,11 +316,11 @@ export default {
   mounted() {
     axios.get("http://localhost:3000/admin/").then((response) => {
       console.log("response", response);
-      this.cafes = response.data.cafe && response.data.cafe;
-      this.phindis = response.data.phindi && response.data.phindi;
-      this.espressos = response.data.espresso && response.data.espresso;
+      this.milkteas = response.data.milktea && response.data.milktea;
+      this.teas = response.data.tea && response.data.tea;
+      this.fastfoods = response.data.fastfood && response.data.fastfood;
 
-      console.log("response", this.cafes, response.cafe, response.data);
+      console.log("response", this.milkteas, response.milktea, response.data);
     });
   },
 };
@@ -333,8 +337,8 @@ body:not(.modal-open) {
   background: #fbedd7;
   padding: 0 !important;
 }
-.page-cafe,
-.page-phindi,
+.page-milktea,
+.page-tea,
 .page-freeze,
 .page-espresso {
   padding-top: 24px;
@@ -342,47 +346,47 @@ body:not(.modal-open) {
   display: flex;
   flex-wrap: wrap;
 }
-.product-cafe {
+.product-milktea {
   padding: 0;
   height: 100%;
   display: flex;
 }
-.product-cafe li {
+.product-milktea li {
   width: 33%;
   margin-top: 12px;
   list-style: none;
 }
-.page-cafe-header {
+.page-milktea-header {
   font-size: 45px;
   font-weight: 700;
 }
-.page-cafe-body {
+.page-milktea-body {
   font-size: 16px;
   text-align: justify;
 }
-.cafe-item {
+.milktea-item {
   width: 236px;
   padding-bottom: 24px;
 }
-.cafe-item-img-top {
+.milktea-item-img-top {
   height: 187px;
   width: 187px;
   margin-left: 24px;
   border: 1px solid #8a746a;
 }
-.cafe-item-body {
+.milktea-item-body {
   padding-top: 12px;
   text-align: center;
 }
-.cafe-item-title {
+.milktea-item-title {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.cafe-item-text {
+.milktea-item-text {
   font-size: 14px;
 }
-.cafe-item-price {
+.milktea-item-price {
   font-weight: 700;
 }
 
@@ -392,7 +396,7 @@ body:not(.modal-open) {
   margin-left: 16px;
   background: #b22830;
 }
-.cafe-item-all {
+.milktea-item-all {
   border-bottom: 1px solid #8a746a;
 }
 .btn-add-item {
@@ -407,7 +411,7 @@ body:not(.modal-open) {
   background: #882106;
 }
 
-.page-cafe-all {
+.page-milktea-all {
   font-size: 18px;
 }
 
@@ -505,7 +509,7 @@ body:not(.modal-open) {
 }
 
 @media (max-width: 767px) {
-  .page-cafe {
+  .page-milktea {
     flex-direction: column-reverse;
   }
   .cart-body-item-img {
@@ -517,25 +521,25 @@ body:not(.modal-open) {
   .cart-body-item-handle_body {
     padding-left: 20px;
   }
-  .page-cafe-all {
+  .page-milktea-all {
     font-size: 16px;
   }
-  .cafe-item-all {
+  .milktea-item-all {
     padding: 0;
   }
-  #product-phindi {
+  #product-tea {
     height: 300px;
   }
-  .page-cafe {
+  .page-milktea {
     padding: 24px 0px 40px 0px;
   }
 
-  .cafe-item {
+  .milktea-item {
     height: 247px;
     width: 165px;
     padding: 0;
   }
-  .cafe-item-img-top {
+  .milktea-item-img-top {
     height: 132px;
     width: 132px;
     margin-left: 24px;
@@ -548,7 +552,7 @@ body:not(.modal-open) {
     width: 140px;
     margin: 12px !important;
   }
-  .cafe-item-text {
+  .milktea-item-text {
     margin: 0;
   }
 }

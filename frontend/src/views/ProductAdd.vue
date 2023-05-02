@@ -13,9 +13,9 @@
               v-model="key"
             >
               <option>Chọn mục</option>
-              <option value="cafe">Trà sữa</option>
-              <option value="phindi">Trà</option>
-              <option value="espresso">Món ăn vặt</option>
+              <option value="milktea">Trà sữa</option>
+              <option value="tea">Trà</option>
+              <option value="fastfood">Món ăn vặt</option>
             </select>
           </div>
           <a href="/admin" type="button" class="btn btn-primary btnSubmit"

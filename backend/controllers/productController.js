@@ -14,7 +14,7 @@ class ProductController {
         res.render('middlePage/product')
     }
 
-    cafe(req, res, next) {
+    milktea(req, res, next) {
         Promise.all([ListMilktea.find({}), ListTea.find({}), ListFastfood.find({})])
             .then(([milktea, tea, fastfood]) => {
                 res.render('product/milktea', { milktea: mutiMongooseObject(milktea), tea: mutiMongooseObject(tea), fastfood: mutiMongooseObject(fastfood) })
@@ -27,7 +27,7 @@ class ProductController {
             .catch(next)
     }
     cart(req, res, next) {
-        // ListCafe.findDeleted({})
+        // Listmilktea.findDeleted({})
         // .then(() => 
         res.render('product/cars')
         // .catch(next)
