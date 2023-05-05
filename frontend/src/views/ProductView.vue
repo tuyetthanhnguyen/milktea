@@ -92,16 +92,16 @@
             <th scope="col" class="text-center">Tùy chọn</th>
           </tr>
         </thead>
-        <tbody v-for="monanvat in monanvats" :key="monanvat.id">
+        <tbody v-for="fastfood in fastfoods" :key="fastfood.id">
           <tr>
             <th scope="row">
-              {{ monanvat._id }}
+              {{ fastfood._id }}
             </th>
-            <td>{{ monanvat.name }}</td>
-            <td>{{ monanvat.price }}</td>
+            <td>{{ fastfood.name }}</td>
+            <td>{{ fastfood.price }}</td>
             <td>
               <a
-                :href="'/admin/' + monanvat._id + '/edit'"
+                :href="'/admin/' + fastfood._id + '/edit'"
                 class="btn btn-link btn-restore"
                 >Chỉnh sửa</a
               >
@@ -110,7 +110,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModal"
-                @click="this.id = monanvat._id"
+                @click="this.id = fastfood._id"
               >
                 Xóa
               </button>
@@ -176,7 +176,7 @@ export default {
     return {
       milkteas: [],
       teas: [],
-      monanvats: [],
+      fastfoods: [],
       modalShow: false,
       id: "",
     };
@@ -185,7 +185,7 @@ export default {
     axios.get("http://localhost:3000/admin/").then((response) => {
       this.milkteas = response.data.milktea;
       (this.teas = response.data.tea)(
-        (this.monanvats = response.data.monanvat)
+        (this.fastfoods = response.data.fastfood)
       );
 
       console.log("response", this.milkteas, response.milktea, response.data);

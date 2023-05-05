@@ -11,15 +11,17 @@
       </div>
       <div class="footer-links d-flex">
         <a href="" class="footer-link"
-          >© 2018 Mikltea Windy. All rights reserved</a
+          >© 2023 Mikltea Windy. All rights reserved</a
         >
         <a href="" class="footer-link footer-link-mid"
           ><i class="fas fa-link"></i> Đăng ký để nhận bản tin</a
         >
-        <a href="" class="footer-link"
+        <!-- <a href="" class="footer-link"
           ><i class="fas fa-envelope"></i> milkteawindy@gmail.com</a
+        > -->
+        <a href="'milkteawindy@gmail.com'" class="footer-link"
+          >milkteawindy@gmail.com</a
         >
-        <!-- <a :href="'milkteawindy@gmail.com'">Liên hệ với chúng tôi</a> -->
       </div>
     </div>
   </div>

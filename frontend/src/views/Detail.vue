@@ -90,7 +90,7 @@
                 <button
                   data-toggle="modal"
                   class="btn btn-primary btn-add-item"
-                  @click="addItem(tea)"
+                  @click="buyNow"
                 >
                   ĐẶT MUA NGAY
                 </button>
@@ -334,7 +334,7 @@ body:not(.modal-open) {
   padding-right: 0px !important;
 }
 .container-all {
-  background: #fbedd7;
+  background: #c9baaf;
   padding: 0 !important;
 }
 .page-milktea,

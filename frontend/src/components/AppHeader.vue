@@ -72,7 +72,7 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
                 >
                 <img
                   class="card-img-top item-img_coffe"
-                  src="https://nhadepso.com/wp-content/uploads/2023/01/hinh-anh-tra-sua-cute_20.jpg"
+                  src="https://nhadepso.com/wp-content/uploads/2023/01/hinh-anh-tea-sua-cute_20.jpg"
                   alt="Card image cap"
                   height="150px"
                 />
@@ -106,7 +106,7 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
                 >
                 <img
                   class="card-img-top item-img_coffe"
-                  src="https://haycafe.vn/wp-content/uploads/2022/03/Background-tra-sua-1.jpg"
+                  src="https://haycafe.vn/wp-content/uploads/2022/03/Background-tea-sua-1.jpg"
                   alt="Card image cap"
                 />
               </ul>
@@ -145,7 +145,7 @@ import logo from "./../images/logo/LOGOMILKTEA.png"
                 >
                 <img
                   class="card-img-top item-img_coffe"
-                  src="https://cdn.dayphache.edu.vn/wp-content/uploads/2019/07/thi-truong-tra-sua-tai-Viet-Nam.jpg"
+                  src="https://cdn.dayphache.edu.vn/wp-content/uploads/2019/07/thi-truong-tea-sua-tai-Viet-Nam.jpg"
                   alt="Card image cap"
                 />
               </ul>
@@ -262,7 +262,7 @@ export default {
   height: 52px;
   top: 80px;
   z-index: 12;
-  background-color: transparent;
+  background-color: teansparent;
 }
 .item-menu-news::before {
   position: absolute;
@@ -271,7 +271,7 @@ export default {
   height: 52px;
   top: 80px;
   z-index: 12;
-  background-color: transparent;
+  background-color: teansparent;
 }
 .item-menu-community::before {
   position: absolute;
@@ -280,7 +280,7 @@ export default {
   height: 52px;
   top: 70px;
   z-index: 12;
-  background-color: transparent;
+  background-color: teansparent;
 }
 .item-menu-me::before {
   position: absolute;
@@ -289,7 +289,7 @@ export default {
   height: 52px;
   top: 80px;
   z-index: 12;
-  background-color: transparent;
+  background-color: teansparent;
 }
 .items-menu_coffe {
   text-align: center;
